@@ -25,13 +25,6 @@ app.use(express.json());
 //we'll be using dynamic routes, in order to read the data from url we have to use this
 app.use(express.urlencoded({ extended: true }));
 
-//set 'credentials: true' to pass --> headers, cookies, etc to browser/frontend
-// app.use(cors({
-//     origin: [process.env.FRONTEND_URL],
-//     methods: ["GET", "POST", "PUT", "DELETE"],
-//     credentials: true,
-// }))
-
 app.use(cors());
 
 // route splitting
